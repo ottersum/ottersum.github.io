@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/*--any text content */
+.textcontentdiv {
+  margin-top:70px;
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start;
+  vertical-align: center;
+  flex-wrap: wrap;
+  gap: 5px; 
+}
+
+/*--superscripts below */
+sup {
+  vertical-align: super; /* Makes superscript position correctly */
+  font-size: 0.8em; /* Keeps superscript readable */
+}
+
+/*--superscripts below */
+.textss {
+  font-family: "EB Garamond", serif;
+  font-size:15.5px;
+  margin-bottom: 2px;
+  margin-top:2px;
+  margin-left:50px;
+  margin-right:50px;
+  align-items: center;
+}
+
+/* smooth transition */
+@view-transition {
+  navigation: auto;
+  types: slide, forwards;
+}
+
+/*
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.4s; 
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  will-change: opacity, transform; 
+}
+*/

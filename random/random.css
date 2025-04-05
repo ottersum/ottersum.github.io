@@ -1,0 +1,37 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.schzim img {
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start;
+  vertical-align: center;
+  padding-left: 50px; 
+  padding-right: 70px; 
+
+  margin-top:70px;
+
+  flex-wrap: wrap;
+  gap: 5px; 
+
+  width: 80%;
+  height: auto;
+
+  margin-top: 0px;
+  margin-bottom:10px;
+}
+
+/* smooth transition */
+@view-transition {
+  navigation: auto;
+  types: slide, forwards;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}

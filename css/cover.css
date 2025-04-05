@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+html {
+  -webkit-text-size-adjust: 100%; /* Stops iOS & Safari from resizing text */
+  text-size-adjust: 100%; /* Standard property for other browsers */
+}
+
+.titlepage {
+  margin-top:100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: center;
+}
+
+.covertitle {
+  font-weight: bold;
+  font-family: "EB Garamond", serif;
+  font-size:50px;
+  margin-bottom: 0;
+  margin-top:100px;
+  align-items: center;
+  vertical-align: center;
+}
+
+.disclaimer {
+  font-family: "EB Garamond", serif;
+  color:gray;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: center;
+}
+
+.author {
+  font-family: "EB Garamond", serif;
+  color:gray;
+  vertical-align: center;
+}
+
+/* smooth transition */
+@view-transition {
+  navigation: auto;
+  types: slide, forwards;
+}
+
+/*
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.4s; 
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  will-change: opacity, transform; 
+}
+*/

@@ -1,0 +1,39 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+ul {
+  list-style-type:disc;  /* Keeps numbers */
+  list-style-position: outside;  /* Numbers stay in normal position */
+  padding-left: 70px;  /* Move numbers even more to the right */
+  margin-left: 0;
+  font-family: "EB Garamond", serif;
+}
+
+.aca-in-li {
+  line-height:1.3;
+  font-family: "EB Garamond", serif;
+  vertical-align: center;
+  padding-left: 20px; /* Add margin-like spacing from the left */
+  padding-right: 60px; 
+  margin-top:6px;
+  margin-bottom:6px;
+}
+
+
+/* smooth transition */
+@view-transition {
+  navigation: auto;
+  types: slide, forwards;
+}
+
+/*
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.4s; 
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  will-change: opacity, transform; 
+}
+*/

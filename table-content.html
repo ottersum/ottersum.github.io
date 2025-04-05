@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <title>Table of contents</title>
+    <link rel="stylesheet" href="css/table-content.css">
+    <link rel="stylesheet" href="css/general.css">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="transition.js" defer></script>
+  </head>
+
+  <body>
+
+    <div>
+      <a href="index.html" class="link">
+        <p  class="pathinfo">
+          ⬅ The Book of Otters (back to cover)
+        </p>
+      </a>
+    </div>
+
+    <div class="tbctitle">
+      <p class="chapternumber">
+        CHAPTER 0
+      </p>
+      <p class="pagetitle">
+        Table of Contents
+      </p>
+      <p class="date">
+        2024 ~ current
+      </p>
+    </div>
+    
+    <div class="textcontentdiv" style="margin-top: 40px;">
+
+      <div>
+        <p class="text">Chapter 1: About</p>
+
+        <div class="toc-specific">
+          <a href="abouts/abtme.html" class="link">
+            <p class="texti">1.1 abt me</p>
+          </a>
+          <a href="abouts/abtblog.html" class="link">
+            <p class="texti">1.2 abt this blog</p>
+          </a>
+          <a href="abouts/media-recs.html" class="link">
+            <p class="texti">1.3 Media(?) I liked</p>
+          </a>
+          <a href="abouts/abtbooks.html" class="link">
+            <p class="texti">1.4 Books!</p>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p class="text">Chapter 2: Blogs</p>
+
+        <div class="toc-specific">
+          <a href="blogging/1-why.html" class="link">
+            <p class="texti">2.1 Pre-&#40;r&#41;amble - copied from some place</p>
+          </a>
+
+          <a href="blogging/2-notgetattach.html" class="link">
+            <p class="texti">2.2 On not getting too attached?</p>
+          </a>
+
+          <a href="blogging/3-golden.html" class="link">
+            <p class="texti">2.3 Golden Mean, Goldilocks Zone or anything similar</p>
+          </a>
+
+          <a href="blogging/4-goals.html" class="link">
+            <p class="texti">2.4 Goals & Motivation? </p>
+          </a>
+
+          <a href="blogging/5-imposter.html" class="link">
+            <p class="texti">2.5 reflection on mposter syndrome!?</p>
+          </a>
+
+          <p class="texti" style="font-weight:450">
+            2.6 POST-CAMP REFLECTION (coming soon)
+          </p>
+
+        </div>
+      </div>
+
+      <div>
+        <a href="projects.html" class="link">
+          <p class="text">Chapter 3: Random things I've tried?</p>
+        </a>
+      </div>
+
+      <div>
+        <p class="text">Chapter 4: Misc.</p>
+
+        <div class="toc-specific">
+          <a href="random/puzzles.html" class="link">
+            <p class="texti">4.1 Puzzles</p>
+          </a>
+          <a href="random/quotes.html" class="link">
+            <p class="texti">4.2 Quotes I liked</p>
+          </a>
+          <a href="random/gall.html" class="link">
+            <p class="texti">4.3 Gallery of Schizodrawings</p>
+          </a>
+          <a href="random/boom.html" class="link">
+            <p class="texti">4.4 BOOM! Click if you MUST :&#41; </p>
+          </a>
+        </div>
+    </div>
+
+    <script>
+      document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") {
+          document.documentElement.style.viewTransitionName = "fix";
+        }
+      });
+    
+      window.addEventListener("pageshow", () => {
+        document.documentElement.style.viewTransitionName = "";
+      });
+    </script>
+
+  </body>
+
+</html>
